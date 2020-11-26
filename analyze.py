@@ -117,7 +117,7 @@ def process_text_analysis(bucket, document):
             
     # Display the image
     image.show()
-    image.save("results","JPEG")
+    image.save("resultado","JPEG")
     return len(blocks)
 
 
