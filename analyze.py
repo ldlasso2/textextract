@@ -122,8 +122,8 @@ def process_text_analysis(bucket, document):
 
 def main():
 
-    bucket = ''
-    document = ''
+    bucket = 's3://textract-console-us-east-2-f03713fa-3502-4fcd-b12e-07cdb460cbdd'
+    document = 'modelo_oficial_n_mina.pdf'
     block_count=process_text_analysis(bucket,document)
     print("Blocks detected: " + str(block_count))
     
