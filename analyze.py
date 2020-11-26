@@ -1,4 +1,4 @@
-Analyzes text in a document stored in an S3 bucket. Display polygon box around text and angled text 
+#Analyzes text in a document stored in an S3 bucket. Display polygon box around text and angled text 
 import boto3
 import io
 from io import BytesIO
