@@ -3,7 +3,7 @@ from trp import Document
 
 # Document
 s3BucketName = "textract-console-us-east-2-f03713fa-3502-4fcd-b12e-07cdb460cbdd"
-documentName = "impuesto.png"
+documentName = "impuesto.jpeg"
 
 # Amazon Textract client
 textract = boto3.client('textract')
