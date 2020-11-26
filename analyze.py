@@ -123,7 +123,7 @@ def process_text_analysis(bucket, document):
 def main():
 
     bucket = 'textract-console-us-east-2-f03713fa-3502-4fcd-b12e-07cdb460cbdd'
-    document = 'impuesto.png'
+    document = 'impuesto.jpeg'
     block_count=process_text_analysis(bucket,document)
     print("Blocks detected: " + str(block_count))
     
