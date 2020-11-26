@@ -1,7 +1,7 @@
 import boto3
 
 # Document
-documentName = "simple-document-image.jpg"
+documentName = "ejm.jpg"
 
 # Read document content
 with open(documentName, 'rb') as document:
