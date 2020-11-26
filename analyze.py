@@ -72,8 +72,8 @@ def process_text_analysis(bucket, document):
     client = boto3.client('textract')
     
     image_binary = stream.getvalue()
-    response = client.analyze_document(Document={'Bytes': image_binary},
-        FeatureTypes=["TABLES", "FORMS"])
+    #response = client.analyze_document(Document={'Bytes': image_binary},
+     #   FeatureTypes=["TABLES", "FORMS"])
   
 
     # Alternatively, process using S3 object
@@ -122,7 +122,7 @@ def process_text_analysis(bucket, document):
 
 def main():
 
-    bucket = 'arn:aws:s3:::textract-console-us-east-2-f03713fa-3502-4fcd-b12e-07cdb460cbdd'
+    bucket = 'textract-console-us-east-2-f03713fa-3502-4fcd-b12e-07cdb460cbdd'
     document = 'impuesto.png'
     block_count=process_text_analysis(bucket,document)
     print("Blocks detected: " + str(block_count))
